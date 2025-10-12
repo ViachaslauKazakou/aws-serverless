@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowRoleAccessToBucket",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::863518426750:role/cmtr-4n6e9j62-iam-pela-iam_role"
+      },
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::cmtr-4n6e9j62-iam-pela-bucket-1-162653",
+        "arn:aws:s3:::cmtr-4n6e9j62-iam-pela-bucket-1-162653/*"
+      ]
+    }
+  ]
+}
