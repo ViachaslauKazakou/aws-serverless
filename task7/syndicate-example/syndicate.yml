@@ -1,0 +1,28 @@
+project_path: .
+project_name: task7-contacts-api
+resources_suffix: dev
+deploy_target_bucket: syndicate-artifacts-${account_id}-${region}
+deploy_target_bucket_region: eu-west-1
+
+# AWS credentials alias (создается через syndicate create_deploy_target_bucket)
+credentials_aliases:
+  - task7-dev
+
+# Регионы для деплоя
+regions:
+  - eu-west-1
+
+# Build configurations
+build_projects_mapping:
+  python:
+    - src/lambdas
+
+# Extended configurations
+extended_prefix_mode: true
+iam_permissions_boundary: ""
+
+# Tags для всех ресурсов
+tags:
+  project: task7-contacts-api
+  environment: dev
+  managed_by: syndicate
