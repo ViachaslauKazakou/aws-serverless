@@ -6,7 +6,7 @@
 # ============================================================
 
 export AWS_ACCESS_KEY_ID=AKIAZPPF72N7EHDWSCFI
-export AWS_SECRET_ACCESS_KEY=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
+export AWS_SECRET_ACCESS_KEY=
 export AWS_DEFAULT_REGION=eu-west-1
 
 # Проверка подключения
